@@ -1,0 +1,16 @@
+categories:
+  - The Gizmo Dojo
+
+questions:
+  - variable: image.name
+    default: nginx
+    description: "What image would you like to deploy?"
+    type: string
+    label: Image Name
+    group: Basic Settings
+  - variable: ingress.paths.path
+    default: /test
+    description: "Where do you want to reach the app, apps.thegizmodojo.com/______?"
+    type: string
+    label: URL Path
+    group: Basic Settings
