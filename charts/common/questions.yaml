@@ -6,11 +6,17 @@ questions:
     default: nginx
     description: "What image would you like to deploy?"
     type: string
-    label: Image Name
-    group: Basic Settings
+    label: "Image Name"
+    group: "Basic Settings"
+  - variable: image.tag
+    default: latest
+    description: "What version of the image would you like to deploy?"
+    type: string
+    label: "Image Tag"
+    group: "Basic Settings"
   - variable: ingress.paths.path
     default: /test
-    description: "Where do you want to reach the app, apps.thegizmodojo.com/______?"
+    description: "Where do you want to reach the app? apps.thegizmodojo.com/______?"
     type: string
-    label: URL Path
-    group: Basic Settings
+    label: "URL Path"
+    group: "Basic Settings"
