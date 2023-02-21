@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  name: nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
@@ -20,7 +20,7 @@ ingress:
   annotations: {}
   host: apps.thegizmodojo.com
   paths:
-    - path: /index
+    - path: /test
       pathType: ImplementationSpecific
   tls: true
 
